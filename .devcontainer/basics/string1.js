@@ -28,12 +28,12 @@ console.log(message.endsWith('.'))  // checks if a string ends with specified st
 console.log(message.includes('if')) // checks if specified string is in the string
 console.log(message.indexOf('as')) //returns index of first occurence of specifies string
 console.log(message.lastIndexOf('in')) //returns index of last occurence of specified substring
-console.log(message.localeCompare('aS','as'))
+console.log(message.localeCompare('aS','as')) // #samjh nhi aaya
 /*The localeCompare() method returns sort order -1, 1, or 0 (for before, after, or equal).
 
 The current locale is based on the language settings of the browser.
 */
 console.log(message.match('in'))
 
-console.log(message.matchAll('ti'))
+console.log(message.matchAll('ti')) //samjh nahi aaya
 
