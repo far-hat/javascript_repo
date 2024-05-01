@@ -13,7 +13,12 @@ connection();
 // so we have to explicitly put a semi colon at the end of call
 
 //iffe using arrow functions
+(  () =>{
+    console.log(`Database connected again`)
+}
+) ();
+// with pasiing variables
 (  (name) =>{
-    console.log(`Dtabase connected again ${name}`)
+    console.log(`Database connected again ${name}`)
 }
 ) ("mehnaz");
