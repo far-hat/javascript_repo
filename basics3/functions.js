@@ -47,3 +47,33 @@ function greetings(guest= "Guest"){  //default args
 
 
 /* ######### Rest operator ####### */
+
+function calculateCartPrice (...price1){
+    return price1
+}
+console.log(calculateCartPrice(250,90,75,110)) 
+
+const Student ={
+    StudentName : "Hafsa",
+    StudentCode : 1234
+}
+
+function handleObject(someObject){
+    console.log(`Username is ${someObject.StudentName} and Student iD is ${someObject.StudentCode}`)
+}
+
+handleObject(Student)// passing object reference
+
+handleObject({
+    StudentName:"adirah",
+    StudentCode : 5678
+}) //declaring object in  func call
+
+//############ Passing array to func #################
+const anArray = [55,88,44,99]
+function returnThirdValue(getArray){
+    return getArray[2]
+}
+
+console.log(`Third array element is ${returnThirdValue(anArray)}`) //passing array reference
+console.log(`Third array element is ${returnThirdValue([60,50,30,70])}`) //passing array in func call
